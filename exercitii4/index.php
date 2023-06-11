@@ -41,7 +41,7 @@ $array = [ 'fotbal', 'meci', 'invingatori', 'turneu', 'cor', 'gol'];
 <h1>Familie de cuvinte fotbal</h1>
 
 
-<ul  <?php echo sizeof($array) == 5 ? 'class="primul"' : 'class="doi"'; ?>>
+<ul  <?php echo sizeof($array) > 5 ? 'class="primul"' : 'class="doi"'; ?>>
 <?php foreach($array as $item) { ?>
 
   <li><?php echo $item; ?> </li>
