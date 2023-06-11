@@ -87,53 +87,79 @@
 
       //greseala: am scris $k = $i*2-1 in loc de "<=" si astfel am creat o bucla infinita cu afisarea de * incontinuu
 
-                    $students = [
+      //a se afisa numele studentului, nota, media
+
+
+
+//                     $students = [
   
-              [
-                  "name" =>"Maria",
-                  "grades" =>[8,7,9,6]
-              ],
-              [
-                  "name"=>"Ciprian",
-                  "grades"=>[9,9,8,10]
-              ],
-              [
-                  "name"=>"Alex",
-                  "grades"=>[7,6,8,7]
-              ]
-              ];
+//               [
+//                   "name" =>"Maria",
+//                   "grades" =>[8,7,9,6]
+//               ],
+//               [
+//                   "name"=>"Ciprian",
+//                   "grades"=>[9,9,8,10]
+//               ],
+//               [
+//                   "name"=>"Alex",
+//                   "grades"=>[7,6,8,7]
+//               ]
+//               ];
 
-              // calculam media fiecarui student si afisam media
-                  foreach ( $students as $student){
-                   
-                      $name = $student["name"];
-                      //echo $name;
-                      $grades = $student["grades"];
-                      //print_r($grades);
-                      $sum = 0;
-                      foreach ($grades as $grade){
-                          $sum += $grade;
-                      }
+//               //calculez media
+               
+//               foreach($students as $student) {
+//                 $name = $student["name"];
+//                 $grades = $student["grades"];
+
+//                 $sum = 0;
+
+//                 foreach ($grades as $grade) {
+//                     $sum += $grade;
+//                     //echo $grade;
+//                 }
+
+           
+
+           
+//            echo "Numele studentului este {$name} si are notele: "; 
+        
+//                   foreach ($grades as $index => $grade) {
+//                     echo $grade;
+
+//                  if ($index != count($grades)-1){
+//                     echo ", ";
+//                  }
+//                 }
+                
+//                 $average = $sum / count($grades);
+
+             
+//                 echo "<br>"."Media: $average"."<br>";
+               
+             
+//  }
+
+    //a se pune parametrii intr-un array asociativ
+
+    $string = "http//myPage.php?id=25&cat=18&user=34";
+
+    $arr = explode("?", $string);
+   
+    $arr = explode("&", $arr[1]);
+     
+
+     $finalArr = [];
 
 
-                  echo "Studentul $name are urmatoarele note : ";
+     for ($i=0; $i<sizeof($arr); $i++) {
+        $currentParam =  explode("=", $arr[$i]);
+        $finalArr[$currentParam[0]] = $currentParam[1];
+     }
 
-                  foreach ($grades as $index=>$grade) {
-                      echo $grade;
-                      if ($index != count($grades) - 1) {
-                          echo ", ";
-                      }
-                      }
+     print_r($finalArr);
 
-                      
-                     $average = $sum / count($grades);
-
-
-                      echo "</br>";
-                      echo "Media $average";
-                      echo "<br><br>"; 
-                                                  
-                  }
-
+     
                  
 ?>

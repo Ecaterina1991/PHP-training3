@@ -259,55 +259,59 @@
 
 //
 //            $students = [
-//
-//                [
-//                    "name" =>"Maria",
-//                    "grades" =>[8,7,9,6]
-//
-//                ],
-//                [
-//                    "name"=>"Ciprian",
-//                    "grades"=>[9,9,8,10]
-//
-//                ],
-//                [
-//                    "name"=>"Alex",
-//                    "grades"=>[7,6,8,7]
-//
-//                ]
-//                ];
-//
-//                // calculam media fiecarui student si afisam media
-//
-//
-//                    foreach ( $students as $student){
-//                        $name = $student["name"];
-//                        $grades = $student["grades"];
-//
-//                        $sum = 0;
-//
-//                        foreach ($grades as $grade){
-//                            $sum += $grade;
-//                        }
-//
-//                    }
-//
-//                    $average = $sum / count($grades);
-//
-//                    echo "Studentul $name are urmatoarele note : ";
-//
-//                    foreach ($grades as $index=>$grade) {
-//                        echo $grade;
-//
-//                        if ($index != count($grades) - 1) {
-//
-//                            echo ", ";
-//
-//                        }
-//                        }
-//                        echo "</br>";
-//                        echo "Media {$average}";
-//                        echo "<br><br>";
+  
+          //     [
+          //         "name" =>"Maria",
+          //         "grades" =>[8,7,9,6]
+          //     ],
+          //     [
+          //         "name"=>"Ciprian",
+          //         "grades"=>[9,9,8,10]
+          //     ],
+          //     [
+          //         "name"=>"Alex",
+          //         "grades"=>[7,6,8,7]
+          //     ]
+          //     ];
+
+          //     // calculam media fiecarui student si afisam media
+          //         foreach ( $students as $student){
+                   
+          //             $name = $student["name"];
+          //             //echo $name;
+          //             $grades = $student["grades"];
+          //             //print_r($grades);
+          //             $sum = 0;
+          //             foreach ($grades as $grade){
+          //                 $sum += $grade;
+          //             }
+
+
+          //         echo "Studentul $name are urmatoarele note : ";
+
+          //         foreach ($grades as $index=>$grade) {
+          //             echo $grade;
+          //             if ($index != count($grades) - 1) {
+          //                 echo ", ";
+          //             }
+          //             }
+
+                      
+          //            $average = $sum / count($grades);
+
+
+          //             echo "</br>";
+          //             echo "Media {$average}";
+          //             echo "<br><br>"; 
+                                                  
+          //         }
+
+
+
+
+
+
+
 
                     // provocare pentru data viitoare: gasiti eroare ce nu face sa afiseze toti studenti, eu am gasit-o, va las si pe voi
 
