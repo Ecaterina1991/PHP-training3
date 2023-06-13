@@ -1,0 +1,11 @@
+se defineste un sir i de la 2 la 100 cu for loop
+definim o variabila booleana isPrime = true
+cream o alta bucla for loop in prima pentru j de la 2 la 100 cu conditia de oprire j<=sqrt(i). 
+avem nevoie de sirul j pentru comparatie/raportare
+daca i % j da rest zero inseamna ca acel nr nu este prim, pt ca are divizori. in iteratia respectiva variabila isPrime devine false + iesim din bucla
+in interiorul for loopului mare dam conditionarea 
+if ($isPrime) == adevarat afisam $i
+
+la baza, fiecare i va fi setat initial ca fiind nr prim, dar se verifica conditia daca are divizori si daca are, deci nu e nr prim, isPrime devine fals pentru acel nr si se iese din bucla cu break.
+
+

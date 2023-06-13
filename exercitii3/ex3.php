@@ -143,22 +143,25 @@
 
     //a se pune parametrii intr-un array asociativ
 
-    $string = "http//myPage.php?id=25&cat=18&user=34";
+    // $string = "http//myPage.php?id=25&cat=18&user=34";
 
-    $arr = explode("?", $string);
+    // $arr = explode("?", $string);
    
-    $arr = explode("&", $arr[1]);
+    // $arr = explode("&", $arr[1]);
      
 
-     $finalArr = [];
+    //  $finalArr = [];
 
 
-     for ($i=0; $i<sizeof($arr); $i++) {
-        $currentParam =  explode("=", $arr[$i]);
-        $finalArr[$currentParam[0]] = $currentParam[1];
-     }
+    //  for ($i=0; $i<sizeof($arr); $i++) {
+    //     $currentParam =  explode("=", $arr[$i]);
+    //     print_r($currentParam);
+    //     $finalArr[$currentParam[0]] = $currentParam[1];
+    //  }
 
-     print_r($finalArr);
+     //print_r($finalArr);
+
+     
 
      
                  
