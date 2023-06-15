@@ -186,4 +186,22 @@
 // Exercițiul 3: Suma cifrelor unui număr
 // Scrie un script PHP care primește un număr întreg de la utilizator și calculează suma cifrelor acestuia. Utilizează o buclă while pentru a extrage cifrele numărului și a le aduna.
 
+// $num = "5698325";
+// $length = strlen($num);
+
+
+// $i=0;
+// $sum=0;
+
+// while($i<=strlen($num)-1) {
+//   $sum+=$num[$i];
+//   $i++;
+//  }
+
+//  echo $sum;
+
+// Exercițiul 1: Generarea unei liste numerotate în HTML folosind o buclă și funcții PHP:
+
+// Exercițiul 2: Generarea unei tabele HTML cu date dintr-un array folosind funcții și bucle PHP:
+
 ?>
