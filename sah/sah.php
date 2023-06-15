@@ -73,7 +73,9 @@
 
  <?php echo sah();  ?>
  
- <!-- greseala: am scris denumirea function la apelarea functiei -->
+ <!-- greseala: am scris denumirea function la apelarea functiei
+alta greseala: nu am scris echo in fata operatorului ternar din tagurile divpentru citirea clasei. tot ce este in codul php ca sa fie afisat trebuie citit cu echo sau print
+-->
 
 </body>
 </html>

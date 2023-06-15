@@ -125,20 +125,27 @@
 // Exercițiul 3: Fibonacci
 // Scrie un program în PHP care afișează primele n numere din seria Fibonacci, unde n este un număr dat de la tastatură.
 
-// $numar = 30;
+function fibonacci($num) {
+  $num1=0;
+  $num2=1;
+  $output=0;
 
-// for($i=1; $i<=30; $i++) {
-//   for($j=1; $j<=30; $j++) {
-//     $j=$i-1;
-//     if($j>=1) {
+  for($i=0; $i<=$num; $i++) {
+    if($i<=1) {
+      $output=$i;
+    }
+    else{
+      $output=$num1+$num2;
+      $num1=$num2;
+      $num2=$output;
+    }
+    echo $output.",";
+  }
 
-//     }
-//   }
-// }
 
+}
 
-
-
+fibonacci(15);
 
 
 
