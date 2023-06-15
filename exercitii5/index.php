@@ -125,28 +125,65 @@
 // Exercițiul 3: Fibonacci
 // Scrie un program în PHP care afișează primele n numere din seria Fibonacci, unde n este un număr dat de la tastatură.
 
-function fibonacci($num) {
-  $num1=0;
-  $num2=1;
-  $output=0;
+// function fibonacci($num) {
+//   $num1=0;
+//   $num2=1;
+//   $output=0;
 
-  for($i=0; $i<=$num; $i++) {
-    if($i<=1) {
-      $output=$i;
-    }
-    else{
-      $output=$num1+$num2;
-      $num1=$num2;
-      $num2=$output;
-    }
-    echo $output.",";
-  }
+//   for($i=0; $i<=$num; $i++) {
+//     if($i<=1) {
+//       $output=$i;
+//     }
+//     else{
+//       $output=$num1+$num2;
+//       $num1=$num2;
+//       $num2=$output;
+//     }
+//     echo $output.",";
+//   }
+// }
 
-
-}
-
-fibonacci(15);
+// fibonacci(15);
 
 
+// Exercițiul 1: Numărul de cifre
+// Scrie un script PHP care primește un număr întreg de la utilizator și afișează numărul de cifre ale acestuia. Utilizează o buclă while pentru a parcurge numărul și împarte-l succesiv la 10 până când devine 0.
+
+
+// function division($num) {
+//  $string="";
+
+//   while(intval($num)>0) {    
+//     $string.=$num."-"; 
+//     $num=intval($num)/10;
+//   }
+//   //echo $string."<br>";
+//   $arr=explode("-", $string);
+//   echo "Numarul de cifre continut in numarul introdus este: ";
+//    print_r(count($arr)-1);
+// }
+
+// division("12345678");
+
+
+// Exercițiul 2: Factorialul unui număr
+// Scrie un script PHP care primește un număr întreg de la utilizator și calculează factorialul acestuia. Utilizează o buclă while pentru a multiplica succesiv numărul cu valorile de la 1 la numărul dat.
+
+//5= (5-0)*(5-1)*(5-2)*(5-3)*(5-4)
+
+// $num=5;
+// $i=0;
+// $fact=1;
+// while($i<$num) {
+//   $result = ($num-$i);
+//   $fact*=$result;
+//   $i++;
+// }
+// echo $fact;
+
+
+
+// Exercițiul 3: Suma cifrelor unui număr
+// Scrie un script PHP care primește un număr întreg de la utilizator și calculează suma cifrelor acestuia. Utilizează o buclă while pentru a extrage cifrele numărului și a le aduna.
 
 ?>
