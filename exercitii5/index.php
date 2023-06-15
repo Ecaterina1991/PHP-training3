@@ -119,14 +119,23 @@
 
 
 
-
+//Numerele Fibonacci sunt numere naturale care fac parte din următorul șir, în care fiecare număr este egal cu suma celor două de dinainte: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …
 
 
 // Exercițiul 3: Fibonacci
 // Scrie un program în PHP care afișează primele n numere din seria Fibonacci, unde n este un număr dat de la tastatură.
 
+// $numar = 30;
 
-//Numerele Fibonacci sunt numere naturale care fac parte din următorul șir, în care fiecare număr este egal cu suma celor două de dinainte: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …
+// for($i=1; $i<=30; $i++) {
+//   for($j=1; $j<=30; $j++) {
+//     $j=$i-1;
+//     if($j>=1) {
+
+//     }
+//   }
+// }
+
 
 
 
