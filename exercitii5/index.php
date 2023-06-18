@@ -202,6 +202,125 @@
 
 // Exercițiul 1: Generarea unei liste numerotate în HTML folosind o buclă și funcții PHP:
 
-// Exercițiul 2: Generarea unei tabele HTML cu date dintr-un array folosind funcții și bucle PHP:
 
-?>
+
+
+//utilizeaza functia array_walk pentru a afisa textul "cartea x este scrisa de autorul y" pentru fiecare din elementele cheie valoare ale unui array. foloseste o conditionare prin care sa se afiseze o anumita fraza toar daca in array este prezent un anumit autor. 
+//valoare, cheie, paragraf este ordinea parametrilor. array_walk() este functia de citire. putem apela functia cu array_walk, oricare ar fi denumirea functiei si inauntru trecem argumentele in ordinea: denumirea arrayului, denumirea functiei si continutul paragrafului.
+//citim cu echo cheia valoarea paragraful in orice ordine vrem noi
+
+
+$arr = ["Un veac de singuratate", "Singur", "Calatoriile lui Gulliver", "Ochii Sfinxului", "Punct Contrapunct"];
+ ?>
+
+<ol>
+<?php for($i=0;$i<=sizeof($arr)-1; $i++): ?>
+ <li> <?php echo $arr[$i];?></li>
+ <?php endfor; ?>
+ </ol>
+
+ <?php echo "<br>";  ?>
+
+  <?php
+ $arr2 = ["Un veac de singuratate" => "Eco", "Singur" => "Strindberg", "Calatoriile lui Gulliver" => "Swift", "Ochii Sfinxului" => "Daniken", "Punct Contrapunct" => "Huxley"];
+
+function citireArray($val,$key,$p) {
+
+ global $arr2;
+
+ if(in_array("Eco", $arr2)) {
+ echo $val . $p . "$key." . "<br>";
+ }
+ }
+
+ array_walk($arr2, "citireArray", " este autorul cartii ");
+
+ echo "<br>";
+
+ //Generarea unui cod de acces aleatoriu
+
+ //un cod aleatoriu poate fi generat cu rand(). ar trebui sa definim fiecare caracter in parte separat. deci codul va fi string. vom itera cu $string[$i] in functie de lungimea stringului. fiecare cifra ar avea o valoare random intre 0 si 9.
+ //if !(empty) ar putea fi o conditie de afisare, astfel incat sa se afiseze daca stringul nu este gol
+//generarea unui cod inseamna ca el nu exista, dar apare atunci cand se indeplineste o anumita conditie
+//care ar fi criteriul care sa ii determine aparitia?
+//am putea folosi if(empty) ca punct de pornire, adica daca stringul este gol, generam un cod
+// cate caractere sa aiba codul? oricate, intre sa zicem 5 si 10, adica si aici sa avem un nr random intre 5 si 10;
+//dar codul trebuie generat o singura data, deci iteratia ar fi pentru caracterele sirului si atat
+//cu fiecare iteratie vom concatena un nou caracter numeric random
+//daca folosim !empty ca si conditie de pornire, va fi valabil doar in prima iteratie, dar if nu este o bucla, ci o conditie. putem defini if si inauntru o bucla, si in interiorul buclei sa se fac operatiunea de afisare a tuturor caracterelor
+
+
+
+//   $string="";
+
+// if(empty($string)) {
+
+// for ($i=0; $i<=10; $i++) {
+// $string[$i]= rand(0,9);
+
+// }
+// }
+// echo $string;
+//am generat un cod aleatoriu de 10 cifre, dar nu stiu daca el este de acces
+
+
+// $lungime = 6; // Lungimea codului de acces
+// $caractere = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; // Caracterele permise
+
+// $cod_acces = '';
+
+// // Generează codul de acces
+// for ($i = 0; $i < $lungime; $i++) {
+//     $pozitie = rand(0, strlen($caractere) - 1);
+//     $cod_acces .= $caractere[$pozitie];
+// }
+
+// echo $cod_acces;
+
+//definim variabila lungime ca sa o putem modifica usor
+//trecem in variabila caractere si litere si cifre ca sa se foloseasca si litere si cifre in parola.
+//$pozitie va reprezenta indexul cu care alegem un caracter aleator din $caractere
+//in stringul gol "cod_acces" adaugam prin concatenare in fiecare iteratie cate un caracter random din variabila caractere care va fi in functie de cifra de index aleasa random
+//deci ce putem noi defini ca valori in functia predefinita rand nu sunt doar cifre, ci si de ex o alta functie strlen()-1
+
+
+// $lungime = 10;
+// $caractere = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// $cod="";
+
+// for($i=0; $i<=$lungime; $i++) {
+//  $pozitie = rand(0, strlen($caractere)-1);
+//  //indexul aleator
+//  $cod.=$caractere[$pozitie];
+// }
+//  echo $cod;
+ //frumos si elegant
+
+
+
+//Să presupunem că avem un array de numere și dorim să le dublăm folosind o funcție și să afișăm rezultatul:
+
+ 
+// $numbers = array(1, 2, 3, 4, 5);
+
+// // Funcția care dublează fiecare element din array utilizând memoria de referință
+// function doubleNumbers(&$array) {
+//     for ($i = 0; $i < count($array); $i++) {
+//         $array[$i] *= 2;
+//     }
+
+// }
+
+// // Apelăm funcția pentru a dubla numerele din array
+//  doubleNumbers($numbers);
+
+
+// // Afișăm rezultatul
+// foreach ($numbers as $number) {
+//     echo $number . " ";
+// }
+
+
+
+   ?>
+
