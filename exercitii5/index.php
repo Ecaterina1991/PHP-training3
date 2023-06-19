@@ -244,10 +244,10 @@ function citireArray($val,$key,$p) {
 //generarea unui cod inseamna ca el nu exista, dar apare atunci cand se indeplineste o anumita conditie
 //care ar fi criteriul care sa ii determine aparitia?
 //am putea folosi if(empty) ca punct de pornire, adica daca stringul este gol, generam un cod
-// cate caractere sa aiba codul? oricate, intre sa zicem 5 si 10, adica si aici sa avem un nr random intre 5 si 10;
+// cate caractere sa aiba codul?  sa zicem 10
 //dar codul trebuie generat o singura data, deci iteratia ar fi pentru caracterele sirului si atat
 //cu fiecare iteratie vom concatena un nou caracter numeric random
-//daca folosim !empty ca si conditie de pornire, va fi valabil doar in prima iteratie, dar if nu este o bucla, ci o conditie. putem defini if si inauntru o bucla, si in interiorul buclei sa se fac operatiunea de afisare a tuturor caracterelor
+//daca folosim !empty ca si conditie de pornire, va fi valabil doar in prima iteratie, dar if nu este o bucla, ci o conditie. putem defini if si inauntru o bucla, si in interiorul buclei sa se faca operatiunea de afisare a tuturor caracterelor
 
 
 
@@ -261,7 +261,7 @@ function citireArray($val,$key,$p) {
 // }
 // }
 // echo $string;
-//am generat un cod aleatoriu de 10 cifre, dar nu stiu daca el este de acces
+//am generat un cod aleatoriu de 10 cifre
 
 
 // $lungime = 6; // Lungimea codului de acces
